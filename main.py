@@ -7,7 +7,7 @@ from subprocess import PIPE
 
 from influxdb import InfluxDBClient
 
-DB_ADDRESS = '206.189.188.186'
+DB_ADDRESS = os.getenv('DB_IP')
 DB_PORT = 8086
 DB_USER = os.getenv('DB_USER')
 DB_PASSWORD = os.getenv('DB_PASSWORD')
